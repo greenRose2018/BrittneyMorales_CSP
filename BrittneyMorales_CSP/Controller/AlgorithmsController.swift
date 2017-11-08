@@ -14,6 +14,22 @@ public class AlgorithmsController: UIViewController {
     
     private func setupAlgorithm()-> Void
     {
+        var algorithmSteps : [String] = []
+        
+        // TODO: Define Algorithm and all steps
+        let algorithm :String = "These arhe instructions to create a project in Java using Eclipse and Github \n"
+        let stepOne :String = "First, open Eclipse and Github."
+        let stepTwo :String = "Second, choose a workspace in Eclipse and click launch."
+        let stepThree :String = "Third, File click new java project, type appropriate name for project, and click next"
+        let stepFour :String = "Fourth, open Github and make a new repository with exact name as projectname"
+        let stepFive :String = "Fifth, undo initial commit "
+        let stepSix :String = "Sixth, edit gitignore files and add bin/ , *.class , and .DS_Store"
+        let stepSeven :String = "Seventh, commit with appropriate sentence describing what was done."
+        let stepEight :String = "Eighth, going back to Eclipse to add packages: controller, test, model, and view. "
+        let stepNine :String = "Ninth, add 2 Java classes to controller: runner, and controller."
+        let stepTen :String = "Tenth, add pvsmsa to runner, and go to controller class and add a start method."
+        let stepEleven :String = "Eleventh, go back to Github to commit."
+        
         
     }
     
