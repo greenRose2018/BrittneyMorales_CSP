@@ -31,6 +31,23 @@ public class AlgorithmsController: UIViewController {
         let stepEleven :String = "Eleventh, go back to Github to commit."
         
         
+        // TODO: Finish adding all steps to the algorithm
+        algorithmSteps = [stepOne, stepTwo, stepThree, stepFour, stepFive, stepSix, stepSeven, stepEight, stepNine, stepTen, stepEleven]
+        
+        let attributesDictionary = [NSAttributedStringKey.font : algorithmText.font]
+        let fullAttributedString = NSMutableAttributedString(string: algorithm, attributes: attributesDictionary)
+        
+        for step in algorithmSteps
+        {
+            let bullet :String = "🤠"
+            let formattedStep :String = "\n\(bullet) \(step)"
+            let attributedStringStep : NSMutableAttributedString =  NSMutableAttributedString(string: formattedStep)
+            let paragraphStyle = createParagraphStyle()
+            
+            attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : paragraphStyle], range: NSMakeRange(0,attributedStringStep.length))
+            fullAttributedString.append(attributedStringStep)
+        }
+        algorithmText.attributedText = fullAttributedString
     }
     
    /* private func createParagraphSte() -> NSParagraphStyle
