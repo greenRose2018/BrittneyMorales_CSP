@@ -14,10 +14,10 @@ public class AlgorithmsController: UIViewController {
     
     private func setupAlgorithm()-> Void
     {
-        var algorithmSteps : [String] = []
+        var algorithmSteps : [String] = [] //How to declare an Array
         
         // TODO: Define Algorithm and all steps
-        let algorithm :String = "These arhe instructions to create a project in Java using Eclipse and Github \n"
+        let algorithm :String = "These are instructions to create a project in Java using Eclipse and Github \n"
         let stepOne :String = "First, open Eclipse and Github."
         let stepTwo :String = "Second, choose a workspace in Eclipse and click launch."
         let stepThree :String = "Third, File click new java project, type appropriate name for project, and click next"
@@ -32,12 +32,12 @@ public class AlgorithmsController: UIViewController {
         
         
         // TODO: Finish adding all steps to the algorithm
-        algorithmSteps = [stepOne, stepTwo, stepThree, stepFour, stepFive, stepSix, stepSeven, stepEight, stepNine, stepTen, stepEleven]
+        algorithmSteps = [stepOne, stepTwo, stepThree, stepFour, stepFive, stepSix, stepSeven, stepEight, stepNine, stepTen, stepEleven] //How to define an array
         
         let attributesDictionary = [NSAttributedStringKey.font : algorithmText.font]
         let fullAttributedString = NSMutableAttributedString(string: algorithm, attributes: attributesDictionary)
         
-        for step in algorithmSteps
+        for step in algorithmSteps // a For loop
         {
             let bullet :String = "🤠"
             let formattedStep :String = "\n\(bullet) \(step)"
@@ -50,7 +50,7 @@ public class AlgorithmsController: UIViewController {
         algorithmText.attributedText = fullAttributedString
     }
     
-    private func createParagraphStyle() -> NSParagraphStyle
+    private func createParagraphStyle() -> NSParagraphStyle //A helper method
     {
         let paragraphStyle: NSMutableParagraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = .left
@@ -64,6 +64,7 @@ public class AlgorithmsController: UIViewController {
     override public func viewDidLoad()
     {
         super.viewDidLoad()
+        setupAlgorithm()
         // Do any additional setup after loading the view.
     }
 
