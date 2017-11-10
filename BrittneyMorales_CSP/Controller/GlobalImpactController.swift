@@ -8,15 +8,43 @@
 
 import UIKit
 
-class GlobalImpactController: UIViewController {
+public class GlobalImpactController: UIViewController {
 
-    override func viewDidLoad() {
+    
+    @IBOutlet weak var planText: UILabel!
+    @IBOutlet weak var problemText: UILabel!
+    @IBOutlet weak var impactText: UILabel!
+    
+    private func setupLabelText() -> Void
+    {
+        setPlanLabel()
+        setProblemLabel()
+        setImpactLabel()
+    }
+    
+    private func setPlanLabel() -> Void
+    {
+        
+    }
+    
+    private func setProblemLabel() -> Void
+    {
+        
+        
+    }
+    
+    private func setImpactLabel() -> Void
+    {
+        
+    }
+    
+    override public func viewDidLoad() {
         super.viewDidLoad()
-
+        setupLabelText()
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
