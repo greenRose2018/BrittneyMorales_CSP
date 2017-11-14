@@ -48,6 +48,7 @@ public class AlgorithmsController: UIViewController {
             fullAttributedString.append(attributedStringStep)
         }
         algorithmText.attributedText = fullAttributedString
+        
     }
     
     private func createParagraphStyle() -> NSParagraphStyle //A helper method

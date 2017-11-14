@@ -24,23 +24,89 @@ public class GlobalImpactController: UIViewController {
     
     private func setPlanLabel() -> Void
     {
+        var planExplain : [String] = []
         
+        let title : String = "The Plan"
+        let sentence :String = "The data collected will show if the user is being underpaid"
+        let sentence1 :String = "Asking for their location and showing the difference between their pay with others in the area"
+        
+        planExplain = [sentence, sentence1]
+        
+        let attributesDictionary = [NSAttributedStringKey.font : planText.font]
+        let fullAttributedString = NSMutableAttributedString(string: title, attributes: attributesDictionary)
+        
+        for line in planExplain
+        {
+            let bullet :String = "🙂"
+            let formattedStep :String = "\n\(bullet) \(line)"
+            let attributedStringStep : NSMutableAttributedString =  NSMutableAttributedString(string: formattedStep)
+            let paragraphStyle = createParagraphStyle()
+            
+            attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : paragraphStyle], range: NSMakeRange(0,attributedStringStep.length))
+            fullAttributedString.append(attributedStringStep)
+        }
+        planText.attributedText = fullAttributedString
     }
     
     private func setProblemLabel() -> Void
     {
+        var problemExplain : [String] = []
         
+        let title :String = "The Problem"
+        let sentence :String = "The problem is that women are paid less than men."
+        let sentence1 :String = "This is a huge problem, because it shows the inequality in the society."
+        //let sentence2 :String = ""
+        
+        problemExplain = [ sentence, sentence1]
+        
+        let attributesDictionary = [NSAttributedStringKey.font : planText.font]
+        let fullAttributedString = NSMutableAttributedString(string: title, attributes: attributesDictionary)
+        
+        for line in problemExplain
+        {
+            let bullet :String = "🙂"
+            let formattedStep :String = "\n\(bullet) \(line)"
+            let attributedStringStep : NSMutableAttributedString =  NSMutableAttributedString(string: formattedStep)
+            let paragraphStyle = createParagraphStyle()
+            
+            attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : paragraphStyle], range: NSMakeRange(0,attributedStringStep.length))
+            fullAttributedString.append(attributedStringStep)
+        }
+        problemText.attributedText = fullAttributedString
         
     }
     
     private func setImpactLabel() -> Void
     {
+        var impactExplain :[String] = []
+        
+        let title :String = "The Impact"
+        let sentence :String = "It impacts me personally, because I could be underpaid, even though i’m doing the exact same job as my coworkers."
+        let sentence1 :String = "I would will feel insecure, because I would infer that there is a reasonable  explanation behind it, but I will question if it was due to my skills."
+        
+        impactExplain = [sentence, sentence1]
+        
+        let attributesDictionary = [NSAttributedStringKey.font : planText.font]
+        let fullAttributedString = NSMutableAttributedString(string: title, attributes: attributesDictionary)
+        
+        for line in impactExplain
+        {
+            let bullet :String = "🙂"
+            let formattedStep :String = "\n\(bullet) \(line)"
+            let attributedStringStep : NSMutableAttributedString =  NSMutableAttributedString(string: formattedStep)
+            let paragraphStyle = createParagraphStyle()
+            
+            attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : paragraphStyle], range: NSMakeRange(0,attributedStringStep.length))
+            fullAttributedString.append(attributedStringStep)
+        }
+        impactText.attributedText = fullAttributedString
+    }
         
     }
-    
     override public func viewDidLoad() {
         super.viewDidLoad()
         setupLabelText()
+        
         // Do any additional setup after loading the view.
     }
 
