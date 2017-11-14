@@ -11,15 +11,22 @@ import UIKit
 public class GlobalImpactController: UIViewController {
 
     
+    @IBOutlet weak var imagePlan: UIImageView!
     @IBOutlet weak var planText: UILabel!
     @IBOutlet weak var problemText: UILabel!
     @IBOutlet weak var impactText: UILabel!
     
     private func setupLabelText() -> Void
     {
+        setImage()
         setPlanLabel()
         setProblemLabel()
         setImpactLabel()
+    }
+    
+    private func setImage() -> Void
+    {
+        imagePlan.image = UIImage(named: "plan")
     }
     
     private func setPlanLabel() -> Void
