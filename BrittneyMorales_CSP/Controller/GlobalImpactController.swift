@@ -34,10 +34,11 @@ public class GlobalImpactController: UIViewController {
         var planExplain : [String] = []
         
         let title : String = "The Plan"
-        let sentence :String = "The data collected will show if the user is being underpaid"
-        let sentence1 :String = "Asking for their location and showing the difference between their pay with others in the area"
+        let sentence :String = "The data collected will show if the user is being underpaid."
+        let sentence1 :String = "Asking for their location and showing the difference between their pay with others in the area."
+        let sentence2 :String = "The data being collected:  location, salary, occupation and gender."
         
-        planExplain = [sentence, sentence1]
+        planExplain = [sentence2, sentence, sentence1]
         
         let attributesDictionary = [NSAttributedStringKey.font : planText.font]
         let fullAttributedString = NSMutableAttributedString(string: title, attributes: attributesDictionary)
@@ -89,9 +90,10 @@ public class GlobalImpactController: UIViewController {
         
         let title :String = "The Impact"
         let sentence :String = "It impacts me personally, because I could be underpaid, even though i’m doing the exact same job as my coworkers."
-        let sentence1 :String = "I would will feel insecure, because I would infer that there is a reasonable  explanation behind it, but I will question if it was due to my skills."
+        let sentence1 :String = "I would will feel insecure, because I would infer that there is a reasonable  explanation behind it."
+        let sentence2 :String = "But I would start to question my own skills if, it was not on par."
         
-        impactExplain = [sentence, sentence1]
+        impactExplain = [sentence, sentence1, sentence2]
         
         let attributesDictionary = [NSAttributedStringKey.font : planText.font]
         let fullAttributedString = NSMutableAttributedString(string: title, attributes: attributesDictionary)
