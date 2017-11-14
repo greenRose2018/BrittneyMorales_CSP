@@ -101,7 +101,15 @@ public class GlobalImpactController: UIViewController {
         }
         impactText.attributedText = fullAttributedString
     }
+    private func createParagraphStyle() -> NSParagraphStyle
+    {
+        let paragraphStyle: NSMutableParagraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.alignment = .left
+        paragraphStyle.defaultTabInterval = 15
+        paragraphStyle.firstLineHeadIndent = 20
+        paragraphStyle.headIndent = 35
         
+        return paragraphStyle
     }
     override public func viewDidLoad() {
         super.viewDidLoad()
