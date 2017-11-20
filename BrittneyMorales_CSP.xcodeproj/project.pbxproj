@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6F186091FC32B3B003BBCBB /* Flyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F186081FC32B3B003BBCBB /* Flyable.swift */; };
+		B6F1860D1FC32D93003BBCBB /* Helicopter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F1860C1FC32D93003BBCBB /* Helicopter.swift */; };
 		B6FAEC7C1FA21FD7005B5AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FAEC7B1FA21FD7005B5AEE /* AppDelegate.swift */; };
 		B6FAEC7E1FA21FD7005B5AEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FAEC7D1FA21FD7005B5AEE /* ViewController.swift */; };
 		B6FAEC811FA21FD7005B5AEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6FAEC7F1FA21FD7005B5AEE /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6F186081FC32B3B003BBCBB /* Flyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flyable.swift; sourceTree = "<group>"; };
+		B6F1860C1FC32D93003BBCBB /* Helicopter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helicopter.swift; sourceTree = "<group>"; };
 		B6FAEC781FA21FD7005B5AEE /* BrittneyMorales_CSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrittneyMorales_CSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6FAEC7B1FA21FD7005B5AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6FAEC7D1FA21FD7005B5AEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 		B6FAEC901FA2204B005B5AEE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B6F186081FC32B3B003BBCBB /* Flyable.swift */,
+				B6F1860C1FC32D93003BBCBB /* Helicopter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -189,8 +195,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6F186091FC32B3B003BBCBB /* Flyable.swift in Sources */,
 				B6FAECA01FA223F6005B5AEE /* GlobalImpactController.swift in Sources */,
 				B6FAEC9E1FA223D4005B5AEE /* InternetController.swift in Sources */,
+				B6F1860D1FC32D93003BBCBB /* Helicopter.swift in Sources */,
 				B6FAEC961FA2235E005B5AEE /* DataAndInformationController.swift in Sources */,
 				B6FAEC9C1FA223BA005B5AEE /* ProgrammingController.swift in Sources */,
 				B6FAEC981FA22383005B5AEE /* AlgorithmsController.swift in Sources */,
