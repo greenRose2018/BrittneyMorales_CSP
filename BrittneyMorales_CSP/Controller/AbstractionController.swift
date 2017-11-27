@@ -32,7 +32,24 @@ class AbstractionController: UIPageViewController, UIPageViewControllerDataSourc
 
         // Do any additional setup after loading the view.
     }
-
+    
+    //MARK:- Required Protocol methods for UIPageViewControllerDataSource
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?
+    {
+        <#code#>
+    }
+    
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?
+    {
+        <#code#>
+    }
+    
+    //MARK:- Support for dots in the UIPageViewConoller
+    public func presentationCount(for pageViewController: UIPageViewController) -> Int
+    {
+    
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
