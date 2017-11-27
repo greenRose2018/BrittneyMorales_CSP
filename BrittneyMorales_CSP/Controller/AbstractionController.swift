@@ -67,7 +67,27 @@ class AbstractionController: UIPageViewController, UIPageViewControllerDataSourc
     
     public func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?
     {
-        <#code#>
+        guard let viewControllerIndex = orderedAbstractionViews.index(of: viewController)
+        else
+        {
+            return nil
+        }
+        
+        let nextIndex = viewControllerIndex + 1
+        
+        guard nextIndex >= 0
+        else
+        {
+            return nil
+        }
+        
+        guard nextIndex < orderedAbstractionViews.count
+        else
+        {
+            return orderedAbstractionViews.first
+        }
+        
+        return orderedAbstractionViews[nextIndex]
     }
     
     //MARK:- Support for dots in the UIPageViewConoller
