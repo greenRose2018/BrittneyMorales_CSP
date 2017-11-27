@@ -20,6 +20,13 @@ class AbstractionController: UIPageViewController, UIPageViewControllerDataSourc
             self.newAbstractionController(abstractionLevel: "Binary"),
             self.newAbstractionController(abstractionLevel: "Gate")]
     }()
+    
+    //Helper method to retrieve the correct ViewController
+    private func newAbstractionController(abstractionLevel : String) -> UIViewController
+    {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "\(abstractionLevel)ViewController")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
