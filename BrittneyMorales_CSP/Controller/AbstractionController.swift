@@ -93,7 +93,10 @@ class AbstractionController: UIPageViewController, UIPageViewControllerDataSourc
     //MARK:- Support for dots in the UIPageViewConoller
     public func presentationCount(for pageViewController: UIPageViewController) -> Int
     {
+        return orderedAbstractionViews.count
+    }
     
+        return firstViewControllerIndex
     }
     
     override func didReceiveMemoryWarning() {
