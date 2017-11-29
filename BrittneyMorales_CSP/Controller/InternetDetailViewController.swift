@@ -1,22 +1,31 @@
 //
-//  InternetController.swift
+//  InternetDetailViewController.swift
 //  BrittneyMorales_CSP
 //
-//  Created by Morales, Brittney on 10/26/17.
+//  Created by Morales, Brittney on 11/29/17.
 //  Copyright © 2017 CTEC. All rights reserved.
 //
 
 import UIKit
+import WebKit
 
-class InternetController: UIViewController {
+public class InternetDetailViewController: UIViewController {
 
-    override func viewDidLoad() {
+    //MARK: GUI  controls
+    @IBOutlet weak var textView: UILabel!
+    @IBOutlet weak var webViewer: WKWebView!
+    
+    override public func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
+    private func setup() -> Void
+    {
+    
+    }
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
