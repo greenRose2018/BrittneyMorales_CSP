@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B616B44D1FCF003100252C7A /* InternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B616B44C1FCF003100252C7A /* InternetMasterViewController.swift */; };
 		B616B4511FCF055700252C7A /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B616B4501FCF055700252C7A /* InternetDetailViewController.swift */; };
+		B616B4541FCF0B2A00252C7A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B616B4531FCF0B2A00252C7A /* WebKit.framework */; };
 		B6F186091FC32B3B003BBCBB /* Flyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F186081FC32B3B003BBCBB /* Flyable.swift */; };
 		B6F1860D1FC32D93003BBCBB /* Helicopter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F1860C1FC32D93003BBCBB /* Helicopter.swift */; };
 		B6FAEC7C1FA21FD7005B5AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FAEC7B1FA21FD7005B5AEE /* AppDelegate.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		B616B44C1FCF003100252C7A /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
 		B616B4501FCF055700252C7A /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
+		B616B4531FCF0B2A00252C7A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		B6F186081FC32B3B003BBCBB /* Flyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flyable.swift; sourceTree = "<group>"; };
 		B6F1860C1FC32D93003BBCBB /* Helicopter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helicopter.swift; sourceTree = "<group>"; };
 		B6FAEC781FA21FD7005B5AEE /* BrittneyMorales_CSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrittneyMorales_CSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,17 +51,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B616B4541FCF0B2A00252C7A /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B616B4521FCF0B2A00252C7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B616B4531FCF0B2A00252C7A /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B6FAEC6F1FA21FD7005B5AEE = {
 			isa = PBXGroup;
 			children = (
 				B6FAEC7A1FA21FD7005B5AEE /* BrittneyMorales_CSP */,
 				B6FAEC791FA21FD7005B5AEE /* Products */,
+				B616B4521FCF0B2A00252C7A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
