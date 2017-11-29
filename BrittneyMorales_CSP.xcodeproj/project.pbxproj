@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B616B44D1FCF003100252C7A /* InternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B616B44C1FCF003100252C7A /* InternetMasterViewController.swift */; };
+		B616B4511FCF055700252C7A /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B616B4501FCF055700252C7A /* InternetDetailViewController.swift */; };
 		B6F186091FC32B3B003BBCBB /* Flyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F186081FC32B3B003BBCBB /* Flyable.swift */; };
 		B6F1860D1FC32D93003BBCBB /* Helicopter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F1860C1FC32D93003BBCBB /* Helicopter.swift */; };
 		B6FAEC7C1FA21FD7005B5AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FAEC7B1FA21FD7005B5AEE /* AppDelegate.swift */; };
@@ -19,11 +21,12 @@
 		B6FAEC961FA2235E005B5AEE /* DataAndInformationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FAEC951FA2235E005B5AEE /* DataAndInformationController.swift */; };
 		B6FAEC981FA22383005B5AEE /* AlgorithmsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FAEC971FA22383005B5AEE /* AlgorithmsController.swift */; };
 		B6FAEC9C1FA223BA005B5AEE /* ProgrammingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FAEC9B1FA223BA005B5AEE /* ProgrammingController.swift */; };
-		B6FAEC9E1FA223D4005B5AEE /* InternetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FAEC9D1FA223D4005B5AEE /* InternetController.swift */; };
 		B6FAECA01FA223F6005B5AEE /* GlobalImpactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FAEC9F1FA223F6005B5AEE /* GlobalImpactController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B616B44C1FCF003100252C7A /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
+		B616B4501FCF055700252C7A /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
 		B6F186081FC32B3B003BBCBB /* Flyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flyable.swift; sourceTree = "<group>"; };
 		B6F1860C1FC32D93003BBCBB /* Helicopter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helicopter.swift; sourceTree = "<group>"; };
 		B6FAEC781FA21FD7005B5AEE /* BrittneyMorales_CSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrittneyMorales_CSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,7 +41,6 @@
 		B6FAEC951FA2235E005B5AEE /* DataAndInformationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAndInformationController.swift; sourceTree = "<group>"; };
 		B6FAEC971FA22383005B5AEE /* AlgorithmsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsController.swift; sourceTree = "<group>"; };
 		B6FAEC9B1FA223BA005B5AEE /* ProgrammingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingController.swift; sourceTree = "<group>"; };
-		B6FAEC9D1FA223D4005B5AEE /* InternetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetController.swift; sourceTree = "<group>"; };
 		B6FAEC9F1FA223F6005B5AEE /* GlobalImpactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				B6FAEC9F1FA223F6005B5AEE /* GlobalImpactController.swift */,
-				B6FAEC9D1FA223D4005B5AEE /* InternetController.swift */,
 				B6FAEC9B1FA223BA005B5AEE /* ProgrammingController.swift */,
 				B6FAEC971FA22383005B5AEE /* AlgorithmsController.swift */,
 				B6FAEC951FA2235E005B5AEE /* DataAndInformationController.swift */,
@@ -92,6 +93,8 @@
 				B6FAEC911FA22300005B5AEE /* CreativityController.swift */,
 				B6FAEC7B1FA21FD7005B5AEE /* AppDelegate.swift */,
 				B6FAEC7D1FA21FD7005B5AEE /* ViewController.swift */,
+				B616B44C1FCF003100252C7A /* InternetMasterViewController.swift */,
+				B616B4501FCF055700252C7A /* InternetDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -196,9 +199,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6F186091FC32B3B003BBCBB /* Flyable.swift in Sources */,
+				B616B44D1FCF003100252C7A /* InternetMasterViewController.swift in Sources */,
 				B6FAECA01FA223F6005B5AEE /* GlobalImpactController.swift in Sources */,
-				B6FAEC9E1FA223D4005B5AEE /* InternetController.swift in Sources */,
 				B6F1860D1FC32D93003BBCBB /* Helicopter.swift in Sources */,
+				B616B4511FCF055700252C7A /* InternetDetailViewController.swift in Sources */,
 				B6FAEC961FA2235E005B5AEE /* DataAndInformationController.swift in Sources */,
 				B6FAEC9C1FA223BA005B5AEE /* ProgrammingController.swift in Sources */,
 				B6FAEC981FA22383005B5AEE /* AlgorithmsController.swift in Sources */,
