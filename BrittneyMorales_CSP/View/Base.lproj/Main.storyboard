@@ -328,9 +328,12 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZPN-iI-d7R" id="lu0-Hv-CyJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="7sW-Ks-LbI" kind="show" identifier="showDetail" id="R3K-dF-Gcx"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -567,4 +570,7 @@
         <image name="logic gate" width="590" height="290"/>
         <image name="women" width="400" height="300"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="R3K-dF-Gcx"/>
+    </inferredMetricsTieBreakers>
 </document>
