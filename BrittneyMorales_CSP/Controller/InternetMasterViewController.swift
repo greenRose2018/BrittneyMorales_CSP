@@ -22,12 +22,26 @@ public class InternetMasterViewController: UITableViewController
             "Swift Guide"
         ]
     }()
+   
+    private lazy var addresses : [String] = []
     
     private var detailViewController : InternetDetailViewController?
     
     private func setup() -> Void
     {
-        
+        addresses = [
+            "https://apstudent.collegeboard.org/apcourse/ap-computer-science-principles",
+            "http://www.canyonsdistrict.org/",
+            "https://ctec.canyonsdistrict.org/",
+            "https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html",
+            "https://twitter.com/",
+            "https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html"
+            ]
+        if let splitView = splitViewController
+        {
+            let currentControllers = splitView.viewControllers
+            detailViewController = currentControllers[0] as? InternetDetailViewController
+        }
     }
     
     override public func viewDidLoad() {
@@ -65,7 +79,46 @@ public class InternetMasterViewController: UITableViewController
         return cell
     }
     
-
+    //MARK: Handle the internal transer
+    override public func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.identifier! == "showDetail"
+        {
+            if let indexPath = self.tableView.indexPathForSelectedRow
+            {
+                let urlString = addresses[indexPath.row]
+                let pageText : String
+                
+                if indexPath.row == 0
+                {
+                    //TODO: Replace with your definitions - great time to use the """ operator
+                    pageText = "All the definitions you wrote........"
+                    /*
+ Url
+ an address that identifies a particular file on the Internet, usually consisting of the protocol, as http, followed by the domain name.
+ TCP
+ Transmission control protocol is a standard that defines how to establish and maintain a network conversation via which application programs can exchange data.
+ IP
+ a unique string of numbers separated by periods that identifies each computer using the Internet Protocol to communicate over a network.
+ DNS
+ (Domain Name System) The Internet's system for converting alphabetic names into numeric IP addresses. For example, when a Web address (URL) is typed into a browser, DNS servers return the IP address of the Web server associated with that name. In this made-up example, the DNS converts the URL www.company.com into the IP address 204.0.8.51. Without DNS, you would have to type the series of four numbers and dots into your browser to retrieve the website, which you actually can do.
+*/
+                }
+                else
+                {
+                    pageText = internetTopics[indexPath.row]
+                }
+                
+                let controller = segue.destination as! InternetDetailViewController
+                
+                controller.detailAddress = urlString
+                controller.detailText = pageText
+                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+                controller.navigationItem.leftItemsSupplementBackButton = true
+            }
+        }
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
