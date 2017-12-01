@@ -15,12 +15,28 @@ public class InternetDetailViewController: UIViewController {
     @IBOutlet weak var textView: UILabel!
     @IBOutlet weak var webViewer: WKWebView!
     
+    var detailAddress : String?
+    {
+        //MARK: Update the detail view when a value is changed.
+        didSet
+        {
+            configureDetailView()
+        }
+    }
+    var detailText : String?
+    {
+        didSet
+        {
+            configureDetailView()
+        }
+        
+    }
     override public func viewDidLoad() {
         super.viewDidLoad()
-
+        configureDetailView()
         // Do any additional setup after loading the view.
     }
-
+    
     private func setup() -> Void
     {
     
