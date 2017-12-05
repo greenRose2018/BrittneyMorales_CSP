@@ -30,10 +30,10 @@ public class InternetMasterViewController: UITableViewController
     private func setup() -> Void
     {
         addresses = [
+            "https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html",
             "https://apstudent.collegeboard.org/apcourse/ap-computer-science-principles",
             "http://www.canyonsdistrict.org/",
             "https://ctec.canyonsdistrict.org/",
-            "https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html",
             "https://twitter.com/",
             "https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html"
             ]
@@ -92,8 +92,8 @@ public class InternetMasterViewController: UITableViewController
                 if indexPath.row == 0
                 {
                     //TODO: Replace with your definitions - great time to use the """ operator
-                    pageText =
-                    """
+                    pageText = """
+                    
                          Url
                          an address that identifies a particular file on the Internet, usually consisting of the protocol, as http, followed by the domain name.
                     
@@ -168,3 +168,4 @@ public class InternetMasterViewController: UITableViewController
     */
 
 }
+
