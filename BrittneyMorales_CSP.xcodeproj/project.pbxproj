@@ -10,6 +10,7 @@
 		B616B44D1FCF003100252C7A /* InternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B616B44C1FCF003100252C7A /* InternetMasterViewController.swift */; };
 		B616B4511FCF055700252C7A /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B616B4501FCF055700252C7A /* InternetDetailViewController.swift */; };
 		B616B4541FCF0B2A00252C7A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B616B4531FCF0B2A00252C7A /* WebKit.framework */; };
+		B687F55F1FD6F0AE0004B284 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B687F55E1FD6F0AE0004B284 /* DrawingView.swift */; };
 		B6F186091FC32B3B003BBCBB /* Flyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F186081FC32B3B003BBCBB /* Flyable.swift */; };
 		B6F1860D1FC32D93003BBCBB /* Helicopter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F1860C1FC32D93003BBCBB /* Helicopter.swift */; };
 		B6FAEC7C1FA21FD7005B5AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FAEC7B1FA21FD7005B5AEE /* AppDelegate.swift */; };
@@ -29,6 +30,7 @@
 		B616B44C1FCF003100252C7A /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
 		B616B4501FCF055700252C7A /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
 		B616B4531FCF0B2A00252C7A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B687F55E1FD6F0AE0004B284 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		B6F186081FC32B3B003BBCBB /* Flyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flyable.swift; sourceTree = "<group>"; };
 		B6F1860C1FC32D93003BBCBB /* Helicopter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helicopter.swift; sourceTree = "<group>"; };
 		B6FAEC781FA21FD7005B5AEE /* BrittneyMorales_CSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrittneyMorales_CSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 			children = (
 				B6FAEC7F1FA21FD7005B5AEE /* Main.storyboard */,
 				B6FAEC841FA21FD7005B5AEE /* LaunchScreen.storyboard */,
+				B687F55E1FD6F0AE0004B284 /* DrawingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				B6FAECA01FA223F6005B5AEE /* GlobalImpactController.swift in Sources */,
 				B6F1860D1FC32D93003BBCBB /* Helicopter.swift in Sources */,
 				B616B4511FCF055700252C7A /* InternetDetailViewController.swift in Sources */,
+				B687F55F1FD6F0AE0004B284 /* DrawingView.swift in Sources */,
 				B6FAEC961FA2235E005B5AEE /* DataAndInformationController.swift in Sources */,
 				B6FAEC9C1FA223BA005B5AEE /* ProgrammingController.swift in Sources */,
 				B6FAEC981FA22383005B5AEE /* AlgorithmsController.swift in Sources */,
