@@ -92,17 +92,20 @@ public class InternetMasterViewController: UITableViewController
                 if indexPath.row == 0
                 {
                     //TODO: Replace with your definitions - great time to use the """ operator
-                    pageText = "All the definitions you wrote........"
-                    /*
- Url
- an address that identifies a particular file on the Internet, usually consisting of the protocol, as http, followed by the domain name.
- TCP
- Transmission control protocol is a standard that defines how to establish and maintain a network conversation via which application programs can exchange data.
- IP
- a unique string of numbers separated by periods that identifies each computer using the Internet Protocol to communicate over a network.
- DNS
- (Domain Name System) The Internet's system for converting alphabetic names into numeric IP addresses. For example, when a Web address (URL) is typed into a browser, DNS servers return the IP address of the Web server associated with that name. In this made-up example, the DNS converts the URL www.company.com into the IP address 204.0.8.51. Without DNS, you would have to type the series of four numbers and dots into your browser to retrieve the website, which you actually can do.
-*/
+                    pageText =
+                    """
+                         Url
+                         an address that identifies a particular file on the Internet, usually consisting of the protocol, as http, followed by the domain name.
+                    
+                         TCP
+                         Transmission control protocol is a standard that defines how to establish and maintain a network conversation via which application programs can exchange data.
+                    
+                        IP
+                         a unique string of numbers separated by periods that identifies each computer using the Internet Protocol to communicate over a network.
+                    
+                        DNS
+                         (Domain Name System) The Internet's system for converting alphabetic names into numeric IP addresses. For example, when a Web address (URL) is typed into a browser, DNS servers return the IP address of the Web server associated with that name. In this made-up example, the DNS converts the URL www.company.com into the IP address 204.0.8.51. Without DNS, you would have to type the series of four numbers and dots into your browser to retrieve the website, which you actually can do.
+                    """
                 }
                 else
                 {

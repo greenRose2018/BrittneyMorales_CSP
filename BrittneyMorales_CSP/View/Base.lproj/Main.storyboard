@@ -315,7 +315,7 @@
             </objects>
             <point key="canvasLocation" x="-170.40000000000001" y="-881.10944527736137"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Internet Samples-->
         <scene sceneID="62q-oY-sMk">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="kOY-RC-1Im" customClass="InternetMasterViewController" customModule="BrittneyMorales_CSP" customModuleProvider="target" sceneMemberID="viewController">
@@ -332,7 +332,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="7sW-Ks-LbI" kind="show" identifier="showDetail" id="R3K-dF-Gcx"/>
+                                    <segue destination="7sW-Ks-LbI" kind="showDetail" id="m9m-Sf-YlL"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -341,7 +341,7 @@
                             <outlet property="delegate" destination="kOY-RC-1Im" id="Kh5-uM-drm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="yLw-De-WJ9"/>
+                    <navigationItem key="navigationItem" title="Internet Samples" id="yLw-De-WJ9"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h3K-3J-MMs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -571,6 +571,6 @@
         <image name="women" width="400" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="R3K-dF-Gcx"/>
+        <segue reference="mb4-wH-0qB"/>
     </inferredMetricsTieBreakers>
 </document>
