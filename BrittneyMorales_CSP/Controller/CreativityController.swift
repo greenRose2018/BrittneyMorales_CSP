@@ -30,6 +30,37 @@ class CreativityController: UICollectionViewController, UICollectionViewDelegate
             UIImage(named: "tiny pikachu")
         ]
     }
+    
+    var largePhotoIndexPath: IndexPath?
+    {
+        didSet
+        {
+            var indexPaths = [IndexPath]()
+            if let largePhotoIndexPath = largePhotoIndexPath
+            {
+                indexPaths.append(largePhotoIndexPath)
+            }
+            if let oldValue = oldValue
+            {
+                indexPaths.append(oldValue)
+            }
+            
+            collectionView?.performBatchUpdates(
+                {
+                self.collectionView?.reloadItems(at: indexPaths)
+                })
+            {
+                completed in
+                
+                if let largePhotoIndexPath = self.largePhotoIndexPath
+                {
+                    self.collectionView?.scrollToItem(at: largePhotoIndexPath,
+                                                      at: .centeredVertically,
+                                                      animated: true)
+                }
+            }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
