@@ -79,6 +79,16 @@ class CreativityController: UICollectionViewController, UICollectionViewDelegate
         return artSelection.count
     }
     
+    
+    override public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    {
+        let artCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtCell
+        
+        artCell.backgroundCol = .blue
+        artCell.imageView.image = artSelection[indexPath.row]
+        artCell.imageName.text = "My Art"
+    }
+    
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
