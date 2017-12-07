@@ -15,9 +15,8 @@ class CreativityController: UICollectionViewController, UICollectionViewDelegate
     private let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
     private let itemsPerRow : CGFloat = 3
     
-    private lazy var artSelection :[UIImage?] =
+    private lazy var artSelection : [UIImage?] =
     {
-     
         return [
             UIImage(named: "Haiku"),
             UIImage(named: "drawing"),
@@ -27,9 +26,11 @@ class CreativityController: UICollectionViewController, UICollectionViewDelegate
             UIImage(named: "Haiku"),
             UIImage(named: "Haiku"),
             UIImage(named: "drawing"),
+            UIImage(named: "tiny pikachu"),
+            UIImage(named: "drawing"),
             UIImage(named: "tiny pikachu")
         ]
-    }
+    }()
     
     var largePhotoIndexPath: IndexPath?
     {
@@ -84,9 +85,11 @@ class CreativityController: UICollectionViewController, UICollectionViewDelegate
     {
         let artCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtCell
         
-        artCell.backgroundCol = .blue
+        artCell.backgroundColor = .blue
         artCell.imageView.image = artSelection[indexPath.row]
         artCell.imageName.text = "My Art"
+    
+        return artCell
     }
     
     //MARK:- Delegate methods
@@ -106,6 +109,30 @@ class CreativityController: UICollectionViewController, UICollectionViewDelegate
         let widthPerItem = availableWidth / itemsPerRow
         
         return CGSize(width: widthPerItem, height: widthPerItem)
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets
+    {
+        return sectionInsets
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat
+    {
+        return sectionInsets.left
+    }
+    
+    override public func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool
+    {
+        if largePhotoIndexPath == indexPath
+        {
+            largePhotoIndexPath = nil
+        }
+        else
+        {
+            largePhotoIndexPath = indexPath
+        }
+        
+        return false
     }
     override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
