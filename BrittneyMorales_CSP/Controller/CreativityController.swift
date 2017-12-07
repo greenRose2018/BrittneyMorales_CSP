@@ -33,7 +33,7 @@ class CreativityController: UICollectionViewController, UICollectionViewDelegate
     
     var largePhotoIndexPath: IndexPath?
     {
-        didSet
+        didSet //property watcher, checks values and makes something happened
         {
             var indexPaths = [IndexPath]()
             if let largePhotoIndexPath = largePhotoIndexPath
@@ -61,13 +61,24 @@ class CreativityController: UICollectionViewController, UICollectionViewDelegate
             }
         }
     }
-    override func viewDidLoad() {
+    
+    //MARK: Lifecycle methods
+    override public func viewDidLoad()
+    {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
 
-    override func didReceiveMemoryWarning() {
+    //MARK:- UICollectionView methods
+    override public func numberOfSections(in collectionView: UICollectionView) -> Int
+    {
+        return 1
+    }
+    override public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    {
+        return artSelection.count
+    }
+    
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
