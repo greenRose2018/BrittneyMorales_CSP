@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -37,7 +38,7 @@
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
                                 <state key="normal" title="Creativity"/>
                                 <connections>
-                                    <segue destination="p56-2S-9Cs" kind="show" id="H94-NS-UZi"/>
+                                    <segue destination="a2d-K9-h1D" kind="show" id="uq7-xH-ZDF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quW-O9-PxW">
@@ -85,12 +86,13 @@
                                     <segue destination="xqb-hb-QMi" kind="show" id="e2d-JT-MIl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJ7-1V-NqP">
-                                <rect key="frame" x="242" y="329" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmv-6X-xik">
+                                <rect key="frame" x="230" y="327" width="67" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="Drawing"/>
                                 <connections>
-                                    <segue destination="qAz-1Y-a3m" kind="show" id="sKH-6L-Diu"/>
+                                    <segue destination="qAz-1Y-a3m" kind="show" id="rxB-C4-Bko"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -236,6 +238,79 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OcM-DX-dzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1590" y="116"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="igj-cH-TB5">
+            <objects>
+                <navigationController id="a2d-K9-h1D" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i40-ya-S6q">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="638-Pj-Gdr" kind="relationship" relationship="rootViewController" id="4Zh-fY-huo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0dU-Lc-cET" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2420" y="107"/>
+        </scene>
+        <!--Creativity Controller-->
+        <scene sceneID="gKU-JW-uSp">
+            <objects>
+                <collectionViewController id="638-Pj-Gdr" customClass="CreativityController" customModule="BrittneyMorales_CSP" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="F9v-df-Vph">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ou7-gH-hLy">
+                            <size key="itemSize" width="250" height="300"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="artIdentifier" id="BsZ-pd-546" customClass="ArtCell" customModule="BrittneyMorales_CSP" customModuleProvider="target">
+                                <rect key="frame" x="62.5" y="0.0" width="250" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="250" height="300"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NV2-Vu-t55">
+                                            <rect key="frame" x="0.0" y="250" width="250" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fg6-ta-EhN">
+                                            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottomMargin" secondItem="NV2-Vu-t55" secondAttribute="bottom" id="TdM-hI-4NU"/>
+                                    <constraint firstAttribute="bottom" secondItem="fg6-ta-EhN" secondAttribute="bottom" constant="50" id="UR3-8W-4Xk"/>
+                                    <constraint firstItem="NV2-Vu-t55" firstAttribute="leading" secondItem="BsZ-pd-546" secondAttribute="leadingMargin" id="fof-l5-oeu"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="NV2-Vu-t55" secondAttribute="trailing" id="m6L-2I-gGZ"/>
+                                    <constraint firstItem="NV2-Vu-t55" firstAttribute="top" secondItem="fg6-ta-EhN" secondAttribute="bottom" id="xAy-Wz-6X3"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageName" destination="NV2-Vu-t55" id="yk9-si-DVS"/>
+                                    <outlet property="imageView" destination="fg6-ta-EhN" id="SJA-Ik-QO4"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="638-Pj-Gdr" id="J5K-Ad-uiB"/>
+                            <outlet property="delegate" destination="638-Pj-Gdr" id="3bW-TB-chB"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="ibs-RL-40W"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dFg-1L-cR2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3305" y="107"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="brJ-Bt-2d4">
@@ -405,21 +480,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="63d-Q3-lCy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1124" y="-1216"/>
-        </scene>
-        <!--Creativity Controller-->
-        <scene sceneID="c3n-Ce-YDd">
-            <objects>
-                <viewController id="p56-2S-9Cs" customClass="CreativityController" customModule="BrittneyMorales_CSP" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="naV-36-CeJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="cpr-fG-CgP"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LRP-q7-uLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="878" y="-636"/>
         </scene>
         <!--Abstraction Controller-->
         <scene sceneID="swp-QZ-E0P">
