@@ -18,6 +18,7 @@ class DrawingView: UIView
     override func draw(_ rect: CGRect)
     {
         // Drawing code
+        drawLotus()
         drawStickFigure().stroke()
         drawTurtle()
         drawHappyTree()
@@ -48,7 +49,27 @@ class DrawingView: UIView
         
         return stickFigure
     }
-    
+    public func drawLotus() -> Void
+    {
+        let lotus = UIBezierPath()
+        
+        //let color = UIColor(red: 204/255, green: 0/255, blue: 91/255, alpha: 1.0)
+        //color.setStroke()
+        //lotus.lineWidth = 2.0
+        
+        lotus.move(to: CGPoint(x: 300, y: 50))
+        lotus.addCurve(to: CGPoint(x:300, y: 150), controlPoint1: CGPoint(x: 310, y:100 ), controlPoint2: CGPoint(x: 350, y: 125))
+        lotus.close()
+        UIColor.purple.setStroke()
+        lotus.lineWidth = 2.0
+        lotus.fill()
+        lotus.stroke()
+        
+        //return lotus
+        
+        
+        
+    }
     public func drawHappyTree() -> Void
     {
         let tinyPika = UIBezierPath()
