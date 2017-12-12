@@ -58,7 +58,11 @@ class DrawingView: UIView
         //lotus.lineWidth = 2.0
         
         lotus.move(to: CGPoint(x: 300, y: 50))
-        lotus.addCurve(to: CGPoint(x:300, y: 150), controlPoint1: CGPoint(x: 310, y:100 ), controlPoint2: CGPoint(x: 350, y: 125))
+        lotus.addCurve(to: CGPoint(x:310, y: 150), controlPoint1: CGPoint(x: 310, y:100 ), controlPoint2: CGPoint(x: 350, y: 125))
+        lotus.move(to: CGPoint(x: 290, y: 150))
+        lotus.addCurve(to: CGPoint(x: 300, y: 50), controlPoint1: CGPoint(x: 250, y:125 ), controlPoint2: CGPoint(x: 290, y: 100))
+        //lotus.move(to: CGPoint(x: 300, y: 50))
+        //lotus.addCurve(to: CGPoint(x:290, y: 150), controlPoint1: CGPoint(x: 290, y:100), controlPoint2: CGPoint(x: 250, y: 125))
         lotus.close()
         UIColor.purple.setStroke()
         lotus.lineWidth = 2.0
