@@ -6,6 +6,7 @@
 //  Copyright © 2017 CTEC. All rights reserved.
 //
 import Foundation
+// this is a strut file
 
 var gameLevel : Int = 1
 
