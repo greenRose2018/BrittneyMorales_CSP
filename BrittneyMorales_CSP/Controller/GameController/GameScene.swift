@@ -109,10 +109,11 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     
     override public func didMove(to view: SKView) -> Void
     {
+        
         self.physicsWorld.gravity = CGVector(dx:0, dy:0)
         self.physicsWorld.contactDelegate = self
         self.physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
-        self.physicsBody?.categoryBitMask = CollisionCategories.EdgeBody
+        self.physicsBody?.categoryBitMask = CollisionCategories.EdgeBody // the edge has a border so it can bounce off
         
         backgroundColor = UIColor.magenta
         rightBounds = self.size.width - 30
@@ -125,8 +126,9 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
 
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) -> Void
     {
-       
+        player.fireBullet(scene: self)
     }
+    
     
     override public func update(_ currentTime: CFTimeInterval) -> Void
     {
