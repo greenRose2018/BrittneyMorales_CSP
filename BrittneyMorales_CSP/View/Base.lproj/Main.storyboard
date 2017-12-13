@@ -65,7 +65,7 @@
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
                                 <state key="normal" title="Programming"/>
                                 <connections>
-                                    <segue destination="Qyc-1n-JUE" kind="show" id="i0E-7R-xun"/>
+                                    <segue destination="Qyc-1n-JUE" kind="show" id="yyX-gt-xbm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egl-sg-BGk">
