@@ -35,7 +35,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         let numberOfInvaders = gameLevel * 2 + 1
         for invaderRow in 0..<numberOfInvaders
         {
-            for invaderCol in 0..<numberOfInvaders
+            for invaderCol in 0..<numberOfInvaders //enchance for loop
             {
                 let currentInvader :Invader = Invader()
                 let halfWidth : CGFloat = currentInvader.size.width / 2
@@ -82,7 +82,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             }
         }
         
-        if(changeDirection == true)
+        if(changeDirection)
         {
             //make it go down the screen a chuck of a time
             self.invaderSpeed *= -1
@@ -197,7 +197,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         }
         if((firstBody.categoryBitMask & CollisionCategories.Invader != 0 ) && (secondBody.categoryBitMask & CollisionCategories.Player != 0))
         {
-            print("Invade and Player Collision Contact")
+            print("Invader and Player Collision Contact")
         }
     }
     
