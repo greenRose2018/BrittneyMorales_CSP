@@ -67,18 +67,31 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         enumerateChildNodes(withName: "invader")
         {
             //Closure parameters
-            node, stop in
+            //what this does I'm going to seach your game for this code
+            //makes it go the other way when it hit the edge of the screen
             
+            node, stop in
+            let invader = node as! SKSpriteNode
+            let invaderHalfWidth = invader.size.width / 2
+            invader.position.x -= CGFloat(self.invaderSpeed)
+            if(invader.position.x > self.rightBounds - invaderHalfWidth || invader.position.x < self.leftBounds + invaderHalfWidth)
+            
+            {
+                changeDirection = true
+            }
         }
         
         if(changeDirection == true)
         {
+            //make it go down the screen a chuck of a time
             self.invaderSpeed *= -1
             self.enumerateChildNodes(withName: "invader")
             {
                 node, stop in
-            
+                let invader = node as! SKSpriteNode
+                invader.position.y -= CGFloat(10)
             }
+            changeDirection = false
             
         }
         
