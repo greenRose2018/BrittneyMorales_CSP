@@ -39,7 +39,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             {
                 let currentInvader :Invader = Invader()
                 let halfWidth : CGFloat = currentInvader.size.width / 2
-                let xPosition : CGFloat = size.width / 2 - halfWidth - (CGFloat(numberOfInvaders) * currentInvader.size.width) + 10
+                let xPosition : CGFloat = size.width - halfWidth - (CGFloat(numberOfInvaders) * currentInvader.size.width) + 10
                 
                 currentInvader.position = CGPoint(x: xPosition + (currentInvader.size.width + CGFloat(10)) * CGFloat(invaderCol - 1), y: CGFloat(self.size.height - CGFloat(invaderRow) * 46))
                 currentInvader.invaderRow = invaderRow
