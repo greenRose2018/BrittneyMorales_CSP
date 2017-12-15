@@ -95,7 +95,7 @@ public class Player: SKSpriteNode
             let moveBulletAction = SKAction.move(to: CGPoint(x: self.position.x, y:scene.size.height + bullet.size.height), duration: 1.0)
             let removeBulletAction = SKAction.removeFromParent()
             bullet.run(SKAction.sequence([moveBulletAction,removeBulletAction]))
-            let waitToEnableFire = SKAction.wait(forDuration: 0.5)
+            let waitToEnableFire = SKAction.wait(forDuration: 0.1)
             run(waitToEnableFire,completion:
                 {
                     self.canFire = true
