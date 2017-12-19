@@ -100,7 +100,14 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     
     private func invokeInvaderFire() -> Void
     {
-        
+        let fireBullet = SKAction.run()
+        {
+            self.fireInvaderBullet()
+        }
+        let waitToFireInvaderBullet = SKAction.wait(forDuration: 2.5)
+        let invaderFire = SKAction.sequence([fireBullet,waitToFireInvaderBullet])
+        let repeatForeverAction = SKAction.repeatForever(invaderFire)
+        run(repeatForeverAction)
     }
     
     func fireInvaderBullet() -> Void
