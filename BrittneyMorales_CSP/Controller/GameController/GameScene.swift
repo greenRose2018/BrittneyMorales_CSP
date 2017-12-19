@@ -112,7 +112,15 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     
     func fireInvaderBullet() -> Void
     {
-       
+       if(invadersThatCanFire.isEmpty)
+       {
+        gameLevel += 1
+        levelComplete()
+        }
+        if let randomInvader = invadersThatCanFire.randomElement()
+        {
+            randomInvader.fireBullet(scene: self)
+        }
     }
     
     func newGame() -> Void
