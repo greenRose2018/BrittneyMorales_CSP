@@ -82,7 +82,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             }
         }
         
-        if(changeDirection)
+        if(changeDirection)  //moves the invaders down the screen
         {
             //make it go down the screen a chuck of a time
             self.invaderSpeed *= -1
