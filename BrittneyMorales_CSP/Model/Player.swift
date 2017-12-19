@@ -66,7 +66,10 @@ public class Player: SKSpriteNode
     
     public func die () -> Void
     {
-        
+        if(!invincible)
+        {
+            lives -= 1
+        }
     }
     
     public func kill() -> Void
