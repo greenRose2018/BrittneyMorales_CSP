@@ -74,7 +74,12 @@ public class Player: SKSpriteNode
     
     public func kill() -> Void
     {
-    
+        gameLevel = 1
+        
+        let gameOverScene = DeathScene(size: self.scene!.size)
+        gameOverScene.scaleMode = self.scene!.scaleMode
+        let transitionType = SKTransition.flipHorizontal(withDuration: 1)
+        self.scene!.view!.presentScene(gameOverScene,transition:transitionType)
     }
     
     public func respawn() -> Void
