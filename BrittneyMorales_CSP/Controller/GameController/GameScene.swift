@@ -159,6 +159,11 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         self.physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         self.physicsBody?.categoryBitMask = CollisionCategories.EdgeBody // the edge has a border so it can bounce off
         
+        let starField = SKEmitterNode(fileNamed: "StarField")
+        starField?.position = CGPoint(x: size.width/2, y:size.height/2)
+        starField?.zPosition = -1000
+        addChild(starField!)
+        
         backgroundColor = UIColor.magenta
         rightBounds = self.size.width - 30
         setupInvaders()
@@ -181,7 +186,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     
     override public func didSimulatePhysics()
     {
-        
+        player.physicsBody?.velocity = CGVector(dx: accelerationX * 600, dy: 0)
     }
 
     //MARK:- Handle Motion
