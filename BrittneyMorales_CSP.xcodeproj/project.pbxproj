@@ -25,6 +25,7 @@
 		B63160121FE188BE0095A0BD /* invader sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B631600B1FE182480095A0BD /* invader sound.mp3 */; };
 		B63160131FE188BE0095A0BD /* laser sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B631600E1FE1824B0095A0BD /* laser sound.mp3 */; };
 		B63160141FE188BE0095A0BD /* powerup sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B631600C1FE1824A0095A0BD /* powerup sound.mp3 */; };
+		B6760A201FE9688500005965 /* DeathScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6760A1F1FE9688500005965 /* DeathScene.swift */; };
 		B687F55F1FD6F0AE0004B284 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B687F55E1FD6F0AE0004B284 /* DrawingView.swift */; };
 		B6BB5ABC1FD99C9400B38498 /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BB5ABB1FD99C9400B38498 /* ArtCell.swift */; };
 		B6F186091FC32B3B003BBCBB /* Flyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F186081FC32B3B003BBCBB /* Flyable.swift */; };
@@ -60,6 +61,7 @@
 		B631600C1FE1824A0095A0BD /* powerup sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "powerup sound.mp3"; sourceTree = "<group>"; };
 		B631600D1FE1824B0095A0BD /* boss sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "boss sound.mp3"; sourceTree = "<group>"; };
 		B631600E1FE1824B0095A0BD /* laser sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "laser sound.mp3"; sourceTree = "<group>"; };
+		B6760A1F1FE9688500005965 /* DeathScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathScene.swift; sourceTree = "<group>"; };
 		B687F55E1FD6F0AE0004B284 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		B6BB5ABB1FD99C9400B38498 /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
 		B6F186081FC32B3B003BBCBB /* Flyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flyable.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				B63160031FE181F00095A0BD /* GameScene.swift */,
 				B63160051FE181F20095A0BD /* LevelCompleteScene.swift */,
 				B63160041FE181F10095A0BD /* StartScene.swift */,
+				B6760A1F1FE9688500005965 /* DeathScene.swift */,
 			);
 			path = GameController;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				B687F55F1FD6F0AE0004B284 /* DrawingView.swift in Sources */,
 				B63160011FE1775A0095A0BD /* InvaderLaser.swift in Sources */,
 				B6FAEC961FA2235E005B5AEE /* DataAndInformationController.swift in Sources */,
+				B6760A201FE9688500005965 /* DeathScene.swift in Sources */,
 				B6FAEC9C1FA223BA005B5AEE /* ProgrammingController.swift in Sources */,
 				B63160061FE181F20095A0BD /* GameScene.swift in Sources */,
 				B6FAEC981FA22383005B5AEE /* AlgorithmsController.swift in Sources */,
