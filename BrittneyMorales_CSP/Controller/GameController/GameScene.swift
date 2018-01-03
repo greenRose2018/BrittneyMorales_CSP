@@ -164,7 +164,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         starField?.zPosition = -1000
         addChild(starField!)
         
-        backgroundColor = UIColor.magenta
+        backgroundColor = UIColor.darkGray
         rightBounds = self.size.width - 30
         setupInvaders()
         setupPlayer()
@@ -234,6 +234,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         {
             print("Invader and Player Collision Contact")
         }
+        
     }
     
 }
