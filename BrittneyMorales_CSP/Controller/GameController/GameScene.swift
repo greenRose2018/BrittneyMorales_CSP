@@ -222,17 +222,22 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             secondBody = contact.bodyA
         }
         
-        if((firstBody.categoryBitMask & CollisionCategories.Invader != 0) && (secondBody.categoryBitMask & CollisionCategories.PlayerBullet != 0))
-        {
-            print("invader and player Bullet Contact")
-        }
+        
         if ((firstBody.categoryBitMask & CollisionCategories.Player != 0) && (secondBody.categoryBitMask & CollisionCategories.InvaderBullet != 0))
         {
             print("Player and Invader Bullet Contact")
+            player.die()
         }
         if((firstBody.categoryBitMask & CollisionCategories.Invader != 0 ) && (secondBody.categoryBitMask & CollisionCategories.Player != 0))
         {
             print("Invader and Player Collision Contact")
+            player.kill()
+        }
+        if((firstBody.categoryBitMask & CollisionCategories.Invader != 0) && (secondBody.categoryBitMask & CollisionCategories.PlayerBullet != 0))
+        {
+            print("invader and player Bullet Contact")
+            
+            
         }
         
     }
