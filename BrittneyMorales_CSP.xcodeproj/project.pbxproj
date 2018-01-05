@@ -31,7 +31,7 @@
 		B6DA5FF91FFFCE04000C808B /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA5FF81FFFCE04000C808B /* DataViewController.swift */; };
 		B6DA5FFD1FFFCF09000C808B /* BucketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA5FFC1FFFCF09000C808B /* BucketItemCell.swift */; };
 		B6DA60001FFFCF5C000C808B /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA5FFF1FFFCF5C000C808B /* BucketItem.swift */; };
-		B6DA60021FFFD0DD000C808B /* bucket.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6DA60011FFFD0DD000C808B /* bucket.csv */; };
+		B6DA60041FFFE71C000C808B /* bucket.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6DA60031FFFE71C000C808B /* bucket.csv */; };
 		B6F186091FC32B3B003BBCBB /* Flyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F186081FC32B3B003BBCBB /* Flyable.swift */; };
 		B6F1860D1FC32D93003BBCBB /* Helicopter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F1860C1FC32D93003BBCBB /* Helicopter.swift */; };
 		B6FAEC7C1FA21FD7005B5AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FAEC7B1FA21FD7005B5AEE /* AppDelegate.swift */; };
@@ -71,7 +71,7 @@
 		B6DA5FF81FFFCE04000C808B /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		B6DA5FFC1FFFCF09000C808B /* BucketItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItemCell.swift; sourceTree = "<group>"; };
 		B6DA5FFF1FFFCF5C000C808B /* BucketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItem.swift; sourceTree = "<group>"; };
-		B6DA60011FFFD0DD000C808B /* bucket.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bucket.csv; sourceTree = "<group>"; };
+		B6DA60031FFFE71C000C808B /* bucket.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bucket.csv; sourceTree = "<group>"; };
 		B6F186081FC32B3B003BBCBB /* Flyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flyable.swift; sourceTree = "<group>"; };
 		B6F1860C1FC32D93003BBCBB /* Helicopter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helicopter.swift; sourceTree = "<group>"; };
 		B6FAEC781FA21FD7005B5AEE /* BrittneyMorales_CSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrittneyMorales_CSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,7 +191,7 @@
 		B6FAEC8E1FA22028005B5AEE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B6DA60011FFFD0DD000C808B /* bucket.csv */,
+				B6DA60031FFFE71C000C808B /* bucket.csv */,
 				B6315FF51FE176BF0095A0BD /* Utilities.swift */,
 				B631600F1FE1825B0095A0BD /* Sounds */,
 				B6FAEC821FA21FD7005B5AEE /* Assets.xcassets */,
@@ -287,7 +287,7 @@
 			files = (
 				B6315FF81FE177010095A0BD /* StarField.sks in Resources */,
 				B63160141FE188BE0095A0BD /* powerup sound.mp3 in Resources */,
-				B6DA60021FFFD0DD000C808B /* bucket.csv in Resources */,
+				B6DA60041FFFE71C000C808B /* bucket.csv in Resources */,
 				B6FAEC861FA21FD7005B5AEE /* LaunchScreen.storyboard in Resources */,
 				B6FAEC831FA21FD7005B5AEE /* Assets.xcassets in Resources */,
 				B6FAEC811FA21FD7005B5AEE /* Main.storyboard in Resources */,

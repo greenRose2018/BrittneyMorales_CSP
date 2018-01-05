@@ -432,10 +432,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="6DA-qe-yKh" userLabel="dataIdentifier">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dataIdentifier" id="6DA-qe-yKh" userLabel="dataIdentifier" customClass="BucketItemCell" customModule="BrittneyMorales_CSP" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6DA-qe-yKh" id="OYZ-jO-GmZ" customClass="BucketItemCell" customModule="BrittneyMorales_CSP" customModuleProvider="target">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6DA-qe-yKh" id="OYZ-jO-GmZ">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -468,12 +468,12 @@
                                         <constraint firstItem="1Jv-VJ-iDp" firstAttribute="leading" secondItem="OYZ-jO-GmZ" secondAttribute="leading" id="tXk-52-6Uv"/>
                                         <constraint firstItem="G2N-ou-9sc" firstAttribute="top" secondItem="OYZ-jO-GmZ" secondAttribute="top" constant="20" id="wcR-2g-rqp"/>
                                     </constraints>
-                                    <connections>
-                                        <outlet property="bucketItemSignature" destination="G2N-ou-9sc" id="S4X-Ri-JHT"/>
-                                        <outlet property="bucketItemSymbol" destination="1Jv-VJ-iDp" id="hCK-E8-xbo"/>
-                                        <outlet property="bucketItemText" destination="4BD-33-opa" id="TwI-eM-Cpo"/>
-                                    </connections>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bucketItemSignature" destination="G2N-ou-9sc" id="8Zo-R8-p0I"/>
+                                    <outlet property="bucketItemSymbol" destination="1Jv-VJ-iDp" id="RF9-fz-kRQ"/>
+                                    <outlet property="bucketItemText" destination="4BD-33-opa" id="Kgq-t5-PQg"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
