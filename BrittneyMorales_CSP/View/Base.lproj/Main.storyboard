@@ -277,7 +277,7 @@
                                 <rect key="frame" x="62.5" y="0.0" width="250" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="251" height="300"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="250" height="300"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NV2-Vu-t55">
@@ -477,6 +477,11 @@
                             <outlet property="delegate" destination="AFN-al-5Xt" id="9Hm-bQ-sqP"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="bucketItemSignature" destination="G2N-ou-9sc" id="NYk-JG-UPN"/>
+                        <outlet property="bucketItemSymbol" destination="4BD-33-opa" id="shI-8H-h1e"/>
+                        <outlet property="bucketItemText" destination="1Jv-VJ-iDp" id="uXS-Zj-5DD"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FIO-js-8GF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
