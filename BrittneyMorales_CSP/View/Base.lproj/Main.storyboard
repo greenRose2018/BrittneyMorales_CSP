@@ -449,7 +449,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bucket Item Here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4BD-33-opa" userLabel="Bucket Item Text">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Bucket Item Here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4BD-33-opa" userLabel="Bucket Item Text">
                                             <rect key="frame" x="55" y="3" width="320" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -465,10 +465,14 @@
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="1Jv-VJ-iDp" secondAttribute="bottom" id="QrF-KI-g0k"/>
                                         <constraint firstAttribute="bottom" secondItem="4BD-33-opa" secondAttribute="bottom" constant="20" id="dgZ-NP-Xtx"/>
-                                        <constraint firstItem="4BD-33-opa" firstAttribute="leading" secondItem="1Jv-VJ-iDp" secondAttribute="trailing" constant="20" id="oRA-8Z-kbw"/>
                                         <constraint firstItem="1Jv-VJ-iDp" firstAttribute="leading" secondItem="OYZ-jO-GmZ" secondAttribute="leading" id="tXk-52-6Uv"/>
                                         <constraint firstItem="G2N-ou-9sc" firstAttribute="top" secondItem="OYZ-jO-GmZ" secondAttribute="top" constant="20" id="wcR-2g-rqp"/>
                                     </constraints>
+                                    <connections>
+                                        <outlet property="bucketItemSignature" destination="G2N-ou-9sc" id="S4X-Ri-JHT"/>
+                                        <outlet property="bucketItemSymbol" destination="1Jv-VJ-iDp" id="hCK-E8-xbo"/>
+                                        <outlet property="bucketItemText" destination="4BD-33-opa" id="TwI-eM-Cpo"/>
+                                    </connections>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -477,11 +481,6 @@
                             <outlet property="delegate" destination="AFN-al-5Xt" id="9Hm-bQ-sqP"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="bucketItemSignature" destination="G2N-ou-9sc" id="NYk-JG-UPN"/>
-                        <outlet property="bucketItemSymbol" destination="4BD-33-opa" id="shI-8H-h1e"/>
-                        <outlet property="bucketItemText" destination="1Jv-VJ-iDp" id="uXS-Zj-5DD"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FIO-js-8GF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
