@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wg4-ak-mJP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -7,6 +7,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -15,99 +16,98 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Main Menu-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BrittneyMorales_CSP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Main Menu" id="BYZ-38-t0r" customClass="ViewController" customModule="BrittneyMorales_CSP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fan-Ia-mTe">
-                                <rect key="frame" x="44" y="59" width="97" height="93"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eK8-em-WNw">
+                                <rect key="frame" x="103" y="127" width="169" height="312"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
-                                <state key="normal" title="Algorithms"/>
-                                <connections>
-                                    <segue destination="fUh-25-X21" kind="show" id="TOD-CX-uyJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2LB-Vr-Azv">
-                                <rect key="frame" x="208" y="89" width="80" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
-                                <state key="normal" title="Creativity"/>
-                                <connections>
-                                    <segue destination="a2d-K9-h1D" kind="show" id="uq7-xH-ZDF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quW-O9-PxW">
-                                <rect key="frame" x="164" y="170" width="169" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
-                                <state key="normal" title="Data and Information"/>
-                                <connections>
-                                    <segue destination="AFN-al-5Xt" kind="show" id="dSF-cI-WmL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tck-1m-JVM">
-                                <rect key="frame" x="44" y="159" width="96" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
-                                <state key="normal" title="Abstraction"/>
-                                <connections>
-                                    <segue destination="zoC-yi-f0f" kind="show" id="fiz-P6-vQ1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIh-HR-3mn">
-                                <rect key="frame" x="55" y="254" width="110" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
-                                <state key="normal" title="Programming"/>
-                                <connections>
-                                    <segue destination="Qyc-1n-JUE" kind="show" id="yyX-gt-xbm"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egl-sg-BGk">
-                                <rect key="frame" x="230" y="254" width="66" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
-                                <state key="normal" title="Internet"/>
-                                <connections>
-                                    <segue destination="xcS-PE-73W" kind="show" id="9YD-4C-LRu"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGe-he-PV9">
-                                <rect key="frame" x="55" y="327" width="111" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
-                                <state key="normal" title="Global Impact"/>
-                                <connections>
-                                    <segue destination="xqb-hb-QMi" kind="show" id="e2d-JT-MIl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmv-6X-xik">
-                                <rect key="frame" x="230" y="327" width="67" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
-                                <state key="normal" title="Drawing"/>
-                                <connections>
-                                    <segue destination="qAz-1Y-a3m" kind="show" id="rxB-C4-Bko"/>
-                                </connections>
-                            </button>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fan-Ia-mTe">
+                                        <rect key="frame" x="39.5" y="0.0" width="90" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                        <state key="normal" title="Algorithms"/>
+                                        <connections>
+                                            <segue destination="fUh-25-X21" kind="show" id="TOD-CX-uyJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2LB-Vr-Azv">
+                                        <rect key="frame" x="44.5" y="40" width="80" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                        <state key="normal" title="Creativity"/>
+                                        <connections>
+                                            <segue destination="638-Pj-Gdr" kind="show" id="yls-Bm-lbj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tck-1m-JVM">
+                                        <rect key="frame" x="36.5" y="80" width="96" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                        <state key="normal" title="Abstraction"/>
+                                        <connections>
+                                            <segue destination="zoC-yi-f0f" kind="show" id="fiz-P6-vQ1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quW-O9-PxW">
+                                        <rect key="frame" x="0.0" y="120" width="169" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                        <state key="normal" title="Data and Information"/>
+                                        <connections>
+                                            <segue destination="AFN-al-5Xt" kind="show" id="dSF-cI-WmL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIh-HR-3mn">
+                                        <rect key="frame" x="29.5" y="160" width="110" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                        <state key="normal" title="Programming"/>
+                                        <connections>
+                                            <segue destination="Qyc-1n-JUE" kind="show" id="yyX-gt-xbm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egl-sg-BGk">
+                                        <rect key="frame" x="51.5" y="200" width="66" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                        <state key="normal" title="Internet"/>
+                                        <connections>
+                                            <segue destination="xcS-PE-73W" kind="show" id="9YD-4C-LRu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGe-he-PV9">
+                                        <rect key="frame" x="29" y="240" width="111" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                        <state key="normal" title="Global Impact"/>
+                                        <connections>
+                                            <segue destination="xqb-hb-QMi" kind="show" id="e2d-JT-MIl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmv-6X-xik">
+                                        <rect key="frame" x="51" y="280" width="67" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                        <state key="normal" title="Drawing"/>
+                                        <connections>
+                                            <segue destination="qAz-1Y-a3m" kind="show" id="rxB-C4-Bko"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zwp-Wy-bkJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="351" y="116"/>
+            <point key="canvasLocation" x="688.79999999999995" y="115.59220389805098"/>
         </scene>
-        <!--View Controller-->
+        <!--ByteCode-->
         <scene sceneID="cFG-OJ-IP3">
             <objects>
-                <viewController storyboardIdentifier="ByteCodeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HQw-Px-5YD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ByteCodeViewController" title="ByteCode" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HQw-Px-5YD" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Yn-QC-uqa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,10 +139,10 @@
             </objects>
             <point key="canvasLocation" x="-66.400000000000006" y="1100.5997001499252"/>
         </scene>
-        <!--View Controller-->
+        <!--Blocks-->
         <scene sceneID="q65-oL-HDI">
             <objects>
-                <viewController storyboardIdentifier="BlockViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TdQ-YS-hl8" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BlockViewController" title="Blocks" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TdQ-YS-hl8" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PaF-xE-XDA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -174,10 +174,10 @@
             </objects>
             <point key="canvasLocation" x="646" y="1100"/>
         </scene>
-        <!--View Controller-->
+        <!--Java-->
         <scene sceneID="2DY-42-0pm">
             <objects>
-                <viewController storyboardIdentifier="JavaViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OLJ-vq-NKn" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JavaViewController" title="Java" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OLJ-vq-NKn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zKg-PC-NBT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -227,7 +227,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="HWD-No-faR"/>
+                                    <segue destination="Wg4-ak-mJP" kind="show" id="HWD-No-faR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -237,23 +237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OcM-DX-dzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2748" y="116"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="igj-cH-TB5">
-            <objects>
-                <navigationController id="a2d-K9-h1D" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i40-ya-S6q">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="638-Pj-Gdr" kind="relationship" relationship="rootViewController" id="4Zh-fY-huo"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0dU-Lc-cET" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3650" y="116"/>
+            <point key="canvasLocation" x="4095" y="-241"/>
         </scene>
         <!--Creativity Controller-->
         <scene sceneID="gKU-JW-uSp">
@@ -310,12 +294,12 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dFg-1L-cR2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4566" y="116"/>
+            <point key="canvasLocation" x="2119" y="-1219"/>
         </scene>
-        <!--View Controller-->
+        <!--Binary-->
         <scene sceneID="brJ-Bt-2d4">
             <objects>
-                <viewController storyboardIdentifier="BinaryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g57-Mc-gbY" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BinaryViewController" title="Binary" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g57-Mc-gbY" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ec5-VU-yBO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -348,10 +332,10 @@
             </objects>
             <point key="canvasLocation" x="2057" y="1100"/>
         </scene>
-        <!--View Controller-->
+        <!--Logic Gates-->
         <scene sceneID="ZxA-E7-kO1">
             <objects>
-                <viewController storyboardIdentifier="GateViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jft-32-cLI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GateViewController" title="Logic Gates" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jft-32-cLI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nbg-yt-hwS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -418,7 +402,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b90-ea-khy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-674" y="-1388"/>
+            <point key="canvasLocation" x="343" y="-958"/>
         </scene>
         <!--Data View Controller-->
         <scene sceneID="p7V-gK-0NO">
@@ -487,7 +471,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FIO-js-8GF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2324" y="-1671.8140929535234"/>
+            <point key="canvasLocation" x="3222" y="345"/>
         </scene>
         <!--Internet Samples-->
         <scene sceneID="62q-oY-sMk">
@@ -519,7 +503,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h3K-3J-MMs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="-2156"/>
+            <point key="canvasLocation" x="1140" y="-1753"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yHw-aE-DyW">
@@ -535,7 +519,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eMc-F1-wCv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-673" y="-2155"/>
+            <point key="canvasLocation" x="342" y="-1752"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="UpS-hH-irR">
@@ -548,7 +532,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="63d-Q3-lCy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1722" y="-1655"/>
+            <point key="canvasLocation" x="-514" y="-1317"/>
         </scene>
         <!--Abstraction Controller-->
         <scene sceneID="swp-QZ-E0P">
@@ -557,21 +541,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="shD-Xs-5Ct" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-730" y="1101"/>
-        </scene>
-        <!--Data And Information Controller-->
-        <scene sceneID="J05-AD-kTS">
-            <objects>
-                <viewController id="c2U-Se-1rk" customClass="DataAndInformationController" customModule="BrittneyMorales_CSP" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5G0-Kd-J5q">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="jc4-vs-euD"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ejo-TB-csf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3775" y="-608"/>
         </scene>
         <!--Algorithms Controller-->
         <scene sceneID="30b-lq-LTF">
@@ -608,7 +577,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUO-pI-En6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2103" y="116"/>
+            <point key="canvasLocation" x="-1516" y="345"/>
         </scene>
         <!--Programming Controller-->
         <scene sceneID="1cO-Xr-fQh">
@@ -623,7 +592,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HEt-lc-ZN8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2884" y="-633"/>
+            <point key="canvasLocation" x="3033" y="-663"/>
         </scene>
         <!--Global Impact Controller-->
         <scene sceneID="Ajn-8z-RnV">
@@ -702,7 +671,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tcU-yR-sci" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-930" y="116"/>
+            <point key="canvasLocation" x="-1090" y="-463"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QtF-Pa-8Lk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wg4-ak-mJP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KsZ-cf-vKy">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pir-ci-xeX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fYp-jQ-a4l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4822" y="-242"/>
         </scene>
     </scenes>
     <resources>
