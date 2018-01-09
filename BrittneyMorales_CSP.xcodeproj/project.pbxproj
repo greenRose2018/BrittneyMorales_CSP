@@ -27,6 +27,7 @@
 		B63160141FE188BE0095A0BD /* powerup sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B631600C1FE1824A0095A0BD /* powerup sound.mp3 */; };
 		B6760A201FE9688500005965 /* DeathScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6760A1F1FE9688500005965 /* DeathScene.swift */; };
 		B687F55F1FD6F0AE0004B284 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B687F55E1FD6F0AE0004B284 /* DrawingView.swift */; };
+		B68B34E1200529E200A76752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B68B34E0200529E200A76752 /* Assets.xcassets */; };
 		B6BB5ABC1FD99C9400B38498 /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BB5ABB1FD99C9400B38498 /* ArtCell.swift */; };
 		B6DA5FF91FFFCE04000C808B /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA5FF81FFFCE04000C808B /* DataViewController.swift */; };
 		B6DA5FFD1FFFCF09000C808B /* BucketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA5FFC1FFFCF09000C808B /* BucketItemCell.swift */; };
@@ -37,7 +38,6 @@
 		B6FAEC7C1FA21FD7005B5AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FAEC7B1FA21FD7005B5AEE /* AppDelegate.swift */; };
 		B6FAEC7E1FA21FD7005B5AEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FAEC7D1FA21FD7005B5AEE /* ViewController.swift */; };
 		B6FAEC811FA21FD7005B5AEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6FAEC7F1FA21FD7005B5AEE /* Main.storyboard */; };
-		B6FAEC831FA21FD7005B5AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6FAEC821FA21FD7005B5AEE /* Assets.xcassets */; };
 		B6FAEC861FA21FD7005B5AEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6FAEC841FA21FD7005B5AEE /* LaunchScreen.storyboard */; };
 		B6FAEC921FA22300005B5AEE /* CreativityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FAEC911FA22300005B5AEE /* CreativityController.swift */; };
 		B6FAEC941FA2233C005B5AEE /* AbstractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FAEC931FA2233C005B5AEE /* AbstractionController.swift */; };
@@ -67,6 +67,7 @@
 		B631600E1FE1824B0095A0BD /* laser sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "laser sound.mp3"; sourceTree = "<group>"; };
 		B6760A1F1FE9688500005965 /* DeathScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathScene.swift; sourceTree = "<group>"; };
 		B687F55E1FD6F0AE0004B284 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		B68B34E0200529E200A76752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6BB5ABB1FD99C9400B38498 /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
 		B6DA5FF81FFFCE04000C808B /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		B6DA5FFC1FFFCF09000C808B /* BucketItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItemCell.swift; sourceTree = "<group>"; };
@@ -78,7 +79,6 @@
 		B6FAEC7B1FA21FD7005B5AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6FAEC7D1FA21FD7005B5AEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B6FAEC801FA21FD7005B5AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B6FAEC821FA21FD7005B5AEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6FAEC851FA21FD7005B5AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6FAEC871FA21FD7005B5AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6FAEC911FA22300005B5AEE /* CreativityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativityController.swift; sourceTree = "<group>"; };
@@ -191,10 +191,10 @@
 		B6FAEC8E1FA22028005B5AEE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B68B34E0200529E200A76752 /* Assets.xcassets */,
 				B6DA60031FFFE71C000C808B /* bucket.csv */,
 				B6315FF51FE176BF0095A0BD /* Utilities.swift */,
 				B631600F1FE1825B0095A0BD /* Sounds */,
-				B6FAEC821FA21FD7005B5AEE /* Assets.xcassets */,
 				B6FAEC871FA21FD7005B5AEE /* Info.plist */,
 			);
 			path = Resources;
@@ -289,7 +289,7 @@
 				B63160141FE188BE0095A0BD /* powerup sound.mp3 in Resources */,
 				B6DA60041FFFE71C000C808B /* bucket.csv in Resources */,
 				B6FAEC861FA21FD7005B5AEE /* LaunchScreen.storyboard in Resources */,
-				B6FAEC831FA21FD7005B5AEE /* Assets.xcassets in Resources */,
+				B68B34E1200529E200A76752 /* Assets.xcassets in Resources */,
 				B6FAEC811FA21FD7005B5AEE /* Main.storyboard in Resources */,
 				B63160111FE188BE0095A0BD /* extra sound.mp3 in Resources */,
 				B63160131FE188BE0095A0BD /* laser sound.mp3 in Resources */,
