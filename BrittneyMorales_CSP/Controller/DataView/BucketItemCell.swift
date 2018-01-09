@@ -26,15 +26,23 @@ class BucketItemCell: UITableViewCell
     {
         let emojiStart = 0x1F601
         let emojiEnd = 0x1F64F
-        let symbolStart = 0x1F680
-        let symbolEnd = 0x1F6C5
         
         let emojiRange = 79
-        let symbolRange = 70
         
         let ascii = emojiStart + Int(arc4random_uniform(UInt32(emojiRange)))
         let emoji = UnicodeScalar(ascii)?.description
         return emoji!
+    }
+    private func randomSymbol() -> String
+    {
+        let symbolStart = 0x1F680
+        let symbolEnd = 0x1F6C5
+        
+        let symbolRange = 70
+        
+        let ascii = symbolStart + Int(arc4random_uniform(UInt32(symbolRange)))
+        let symbol = UnicodeScalar(ascii)?.description
+        return symbol!
     }
     private func updateCellView() -> Void
     {
