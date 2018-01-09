@@ -13,9 +13,6 @@
         <array key="Optima.ttc">
             <string>Optima-Regular</string>
         </array>
-        <array key="TimesNewRomanItalic.ttf">
-            <string>TimesNewRomanPS-ItalicMT</string>
-        </array>
     </customFonts>
     <scenes>
         <!--View Controller-->
@@ -439,34 +436,40 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Jv-VJ-iDp" userLabel="Bucket Item Symbol">
-                                            <rect key="frame" x="0.0" y="8.5" width="35" height="35"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="35" id="43B-XX-g0E"/>
-                                                <constraint firstAttribute="height" constant="35" id="EEr-7c-FTt"/>
-                                            </constraints>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Jv-VJ-iDp" userLabel="Bucket Item Symbol">
+                                            <rect key="frame" x="5" y="0.0" width="19.5" height="43.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Bucket Item Here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4BD-33-opa" userLabel="Bucket Item Text">
-                                            <rect key="frame" x="55" y="3" width="320" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2N-ou-9sc" userLabel="Bucket Item Signature">
+                                            <rect key="frame" x="322.5" y="24" width="47.5" height="19"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Author">
+                                                    <attributes>
+                                                        <font key="NSFont" size="17" name="TimesNewRomanPS-ItalicMT"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Author" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2N-ou-9sc" userLabel="Bucket Item Signature">
-                                            <rect key="frame" x="306" y="24" width="69" height="19"/>
-                                            <fontDescription key="fontDescription" name="TimesNewRomanPS-ItalicMT" family="Times New Roman" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Bucket Item Here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4BD-33-opa" userLabel="Bucket Item Text">
+                                            <rect key="frame" x="43" y="0.0" width="327" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="1Jv-VJ-iDp" secondAttribute="bottom" id="QrF-KI-g0k"/>
-                                        <constraint firstAttribute="bottom" secondItem="4BD-33-opa" secondAttribute="bottom" constant="20" id="dgZ-NP-Xtx"/>
-                                        <constraint firstItem="1Jv-VJ-iDp" firstAttribute="leading" secondItem="OYZ-jO-GmZ" secondAttribute="leading" id="tXk-52-6Uv"/>
-                                        <constraint firstItem="G2N-ou-9sc" firstAttribute="top" secondItem="OYZ-jO-GmZ" secondAttribute="top" constant="20" id="wcR-2g-rqp"/>
+                                        <constraint firstItem="4BD-33-opa" firstAttribute="leading" secondItem="1Jv-VJ-iDp" secondAttribute="trailing" constant="10" id="35g-f0-jWt"/>
+                                        <constraint firstItem="4BD-33-opa" firstAttribute="top" secondItem="OYZ-jO-GmZ" secondAttribute="top" id="9xN-3w-ty5"/>
+                                        <constraint firstAttribute="bottom" secondItem="1Jv-VJ-iDp" secondAttribute="bottom" id="B0i-fU-YQb"/>
+                                        <constraint firstAttribute="trailing" secondItem="G2N-ou-9sc" secondAttribute="trailing" constant="5" id="DcA-r4-gwe"/>
+                                        <constraint firstAttribute="bottom" secondItem="G2N-ou-9sc" secondAttribute="bottom" id="HZ3-u2-ZK4"/>
+                                        <constraint firstAttribute="trailing" secondItem="4BD-33-opa" secondAttribute="trailing" constant="5" id="PuN-Mg-5hZ"/>
+                                        <constraint firstItem="1Jv-VJ-iDp" firstAttribute="top" secondItem="OYZ-jO-GmZ" secondAttribute="top" id="eDd-8a-W4N"/>
+                                        <constraint firstItem="1Jv-VJ-iDp" firstAttribute="leading" secondItem="OYZ-jO-GmZ" secondAttribute="leading" constant="5" id="oVW-UY-ucs"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -484,7 +487,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FIO-js-8GF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2056.8000000000002" y="-1528.785607196402"/>
+            <point key="canvasLocation" x="2324" y="-1671.8140929535234"/>
         </scene>
         <!--Internet Samples-->
         <scene sceneID="62q-oY-sMk">
